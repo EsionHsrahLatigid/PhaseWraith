@@ -1,6 +1,6 @@
 #include "ParameterGridEditor.h"
 
-#include "FoldVandalPlugin.h"
+#include "PhaseWraithPlugin.h"
 
 #include <algorithm>
 #include <cmath>
@@ -61,7 +61,7 @@ ParameterGridEditor::ParameterGridEditor (yup::AudioProcessor& processor,
     , warning (newWarning)
     , accentColor (newAccentColor)
 {
-    phasewraithProcessor = dynamic_cast<FoldVandalPlugin*> (&processor);
+    phasewraithProcessor = dynamic_cast<PhaseWraithPlugin*> (&processor);
 
     const auto processorParameters = processor.getParameters();
     parameters.assign (processorParameters.begin(), processorParameters.end());
