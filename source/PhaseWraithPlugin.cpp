@@ -237,7 +237,7 @@ yup::AudioProcessorEditor* PhaseWraithPlugin::createEditor()
     return new ParameterGridEditor (*this,
                                     "PhaseWraith",
                                     "Dual six-stage barberpole phaser with standalone-only audition.",
-                                    0xffd9ff42u);
+                                    0xfff2f2f0u);
 #endif
 }
 
