@@ -66,6 +66,8 @@ On macOS, the local bundle paths are:
 - `artifacts/plugin-release/macos-arm64/vst3/phasewraith_vst3_plugin.vst3`
 - `artifacts/plugin-release/macos-arm64/au/phasewraith_au_plugin.component`
 
+For local macOS non-CI `plugin-release` builds, staged VST3 and AU bundles are also physically copied to `~/Library/Audio/Plug-Ins/VST3` and `~/Library/Audio/Plug-Ins/Components`. The Standalone app stays under `artifacts/plugin-release/<platform-arch>/standalone`. Configure with `-DEHL_COPY_PLUGIN_AFTER_BUILD=OFF` to disable the local plugin copy.
+
 Windows uses `artifacts/plugin-release/windows-x64/` with `standalone/` and `vst3/` directories.
 
 ## CI
